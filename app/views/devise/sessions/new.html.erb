@@ -1,0 +1,14 @@
+<div id="user-form">
+	<h2>登录</h2>
+	<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+		<%= f.input :email, :required => false, :autofocus => true, :label => "邮箱" %>
+		<%= f.input :password, :required => false, :label => "密码" %>
+		<%= f.input :remember_me, :as => :boolean if devise_mapping.rememberable? %>
+		<%= link_to "忘记密码?", new_password_path(resource_name) %>
+		<%= f.button :submit, "登录", :class => "btn btn-large btn-primary btn-sign" %>
+	<% end %>
+	
+</div>
+
+
+

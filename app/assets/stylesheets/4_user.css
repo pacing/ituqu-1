@@ -1,0 +1,39 @@
+label{
+	display: inline;
+	margin-right: 20px;
+	font-size: 1.2em;
+}
+
+#user-form{
+	width: 800px;
+	margin: 0 auto;
+}
+#user-form h2{
+	margin-bottom:20px;
+}
+.radio, .checkbox{
+	padding-right: 0;
+}
+.boolean{
+	display: inline;
+	position: relative;
+	left:10px;
+	margin:10px 20px 10px 0;
+}
+.error{
+	margin-left: 5px;
+	color:red;
+}
+.btn-sign{
+	display: block;
+	margin: 10px 120px;
+	left:20px;
+	font:1.8em bold;
+	letter-spacing: 5px;
+}
+#user_email, #user_password{
+	height:40px;
+	width: 300px;
+	font-size: 1.6em;
+	padding-left: 10px;
+}

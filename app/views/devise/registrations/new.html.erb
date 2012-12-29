@@ -1,0 +1,10 @@
+<div id="user-form">
+	<h2>注册</h2>
+	<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+		<%= f.input :email, :required => true, :autofocus => true, :label => "邮箱" %>
+		<%= f.input :password, :required => true, :label => "密码", :placeholder => "密码至少六位" %>
+		<%= f.button :submit, "注册", :class => "btn btn-large btn-primary btn-sign" %>
+	<% end %>
+</div>
+
+
